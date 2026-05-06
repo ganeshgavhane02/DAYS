@@ -2,9 +2,9 @@
 
 This repository tracks my daily frontend practice. The goal is to improve core HTML and CSS skills through small, focused tasks with clean structure and clear documentation.
 
-## Day 1: Traffic Light Display
+## Day 8: Traffic Light Display
 
-Day 1 builds a simple traffic light interface using only HTML and CSS.
+Day 8 builds a simple traffic light interface using only HTML and CSS.
 
 ### Implemented in this task
 
@@ -16,14 +16,14 @@ Day 1 builds a simple traffic light interface using only HTML and CSS.
 
 ### Project files
 
-- `day1/display.html` - Structure for the traffic light and output panel.
-- `day1/style.css` - Layout, spacing, shape, and color styling.
+- `day8/display.html` - Structure for the traffic light and output panel.
+- `day8/style.css` - Layout, spacing, shape, and color styling.
 
 ### Run locally
 
 1. Clone this repository.
-2. Open `day1/display.html` in any browser.
-3. Modify `day1/style.css` to practice layout and visual updates.
+2. Open `day8/display.html` in any browser.
+3. Modify `day8/style.css` to practice layout and visual updates.
 
 ### Learning outcomes
 
