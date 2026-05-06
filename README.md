@@ -1,37 +1,41 @@
 # DAYS
 
-A daily coding practice repository focused on building frontend fundamentals with clean, readable code and consistent project structure.
+This repository tracks my daily frontend practice. The goal is to improve core HTML and CSS skills through small, focused tasks with clean structure and clear documentation.
 
 ## Day 1: Traffic Light Display
 
-This Day 1 exercise demonstrates a simple traffic light UI built with HTML and CSS.
+Day 1 builds a simple traffic light interface using only HTML and CSS.
 
-### What is implemented
+### Implemented in this task
 
-- Semantic HTML structure for a compact UI demo.
-- Flexbox-based vertical light alignment.
-- Circular lights with clear visual states (red, yellow, green).
-- A styled output panel to simulate a photo output area.
-- Responsive layout behavior using wrapping and centered alignment.
+- Semantic markup for a compact UI demo.
+- Vertical light stacking with Flexbox.
+- Three circular light states: red, yellow, and green.
+- A styled side panel to represent a photo output area.
+- Responsive behavior with centered alignment and wrapping.
 
-### Files
+### Project files
 
-- `day1/display.html` - Markup for the traffic light and preview panel.
-- `day1/style.css` - Styling for layout, shape, spacing, and colors.
+- `day1/display.html` - Structure for the traffic light and output panel.
+- `day1/style.css` - Layout, spacing, shape, and color styling.
 
-### How to run
+### Run locally
 
-1. Clone the repository.
-2. Open `day1/display.html` in your browser.
-3. Edit `day1/style.css` to experiment with sizes, colors, and spacing.
+1. Clone this repository.
+2. Open `day1/display.html` in any browser.
+3. Modify `day1/style.css` to practice layout and visual updates.
 
-### Learning focus
+### Learning outcomes
 
-- Box model and spacing fundamentals.
-- Flexbox alignment and direction.
-- Basic UI composition using reusable CSS classes.
-- Accessibility improvements with `aria-label` usage.
+- Better understanding of the CSS box model.
+- Practical use of Flexbox for alignment.
+- Building UI blocks with reusable class-based styles.
+- Basic accessibility improvements using `aria-label`.
 
-## Roadmap
+### Development note
 
-New folders (`day2`, `day3`, etc.) will be added over time with progressively advanced practice tasks.
+This project was written and reviewed manually, with attention to readable code and documentation quality.
+
+## Next steps
+
+Additional folders (`day2`, `day3`, and beyond) will be added with progressively advanced practice tasks.
