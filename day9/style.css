@@ -1,0 +1,204 @@
+/* CSS TRANSITIONS - Day 9 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto 50px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 15px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #ff6b6b;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+/* 1. BASIC TRANSITION */
+/* Syntax: transition: property duration timing-function delay; */
+.basic-transition {
+    background-color: #ff6b6b;
+    transition: background-color 0.5s ease;
+    /* 
+       property: background-color - what CSS property to animate
+       duration: 0.5s - how long the animation takes
+       timing-function: ease - acceleration curve
+       delay: (default 0s) - wait before starting
+    */
+}
+
+.basic-transition:hover {
+    background-color: #4ecdc4;
+}
+
+/* 2. MULTIPLE PROPERTIES */
+/* You can transition multiple properties at once */
+.multiple-props {
+    width: 100px;
+    height: 100px;
+    background-color: #ff9999;
+    border-radius: 10px;
+    transition: width 0.5s ease,
+        height 0.5s ease,
+        background-color 0.5s ease,
+        border-radius 0.5s ease;
+    /* Shorthand: transition: all 0.5s ease; */
+}
+
+.multiple-props:hover {
+    width: 200px;
+    height: 200px;
+    background-color: #a29bfe;
+    border-radius: 50%;
+}
+
+/* 3. TRANSITION DELAY */
+/* Syntax: transition-delay: time; */
+.transition-delay {
+    background-color: #fdcb6e;
+    transition: background-color 1s ease;
+    transition-delay: 1s;
+    /* The transition won't start until 1 second after hover */
+}
+
+.transition-delay:hover {
+    background-color: #6c5ce7;
+}
+
+/* 4. TIMING FUNCTIONS */
+/* Different acceleration curves for smooth animations */
+
+/* ease - slow start, fast middle, slow end (default) */
+.ease {
+    background-color: #ff7675;
+    transition: all 1s ease;
+}
+
+.ease:hover {
+    transform: translateX(100px);
+}
+
+/* linear - constant speed throughout */
+.linear {
+    background-color: #fab1a0;
+    transition: all 1s linear;
+}
+
+.linear:hover {
+    transform: translateX(100px);
+}
+
+/* ease-in - slow start, fast end */
+.ease-in {
+    background-color: #74b9ff;
+    transition: all 1s ease-in;
+}
+
+.ease-in:hover {
+    transform: translateX(100px);
+}
+
+/* ease-out - fast start, slow end */
+.ease-out {
+    background-color: #81ecec;
+    transition: all 1s ease-out;
+}
+
+.ease-out:hover {
+    transform: translateX(100px);
+}
+
+/* ease-in-out - slow start, fast middle, slow end */
+.ease-in-out {
+    background-color: #55efc4;
+    transition: all 1s ease-in-out;
+}
+
+.ease-in-out:hover {
+    transform: translateX(100px);
+}
+
+/* 5. TRANSITION DURATION - Different speeds */
+.duration-1s {
+    background-color: #fd79a8;
+    transition: all 1s ease;
+}
+
+.duration-1s:hover {
+    transform: scale(1.5);
+}
+
+.duration-2s {
+    background-color: #fdcb6e;
+    transition: all 2s ease;
+}
+
+.duration-2s:hover {
+    transform: scale(1.5);
+}
+
+.duration-3s {
+    background-color: #6c5ce7;
+    transition: all 3s ease;
+}
+
+.duration-3s:hover {
+    transform: scale(1.5);
+}
+
+/* Helper class for grouping timing examples */
+.box-group {
+    display: inline-block;
+    margin: 15px 10px;
+    text-align: center;
+}
+
+.box-group p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .box-group {
+        display: block;
+        margin: 10px 0;
+    }
+}
