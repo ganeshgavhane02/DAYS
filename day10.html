@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 - Product Landing Page</title>
+    <style>
+        :root {
+            --bg: #fff8f1;
+            --panel: #ffffff;
+            --ink: #1f2937;
+            --muted: #6b7280;
+            --accent: #ea580c;
+            --accent-2: #0f766e;
+            --border: #f1dfcf;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--ink);
+            background:
+                linear-gradient(135deg, rgba(234, 88, 12, 0.14), transparent 35%),
+                linear-gradient(225deg, rgba(15, 118, 110, 0.12), transparent 36%),
+                var(--bg);
+        }
+
+        .page {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px 64px;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 20px;
+            align-items: stretch;
+        }
+
+        .panel {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            padding: 28px;
+            box-shadow: 0 18px 36px rgba(120, 53, 15, 0.08);
+        }
+
+        .kicker {
+            margin: 0 0 12px;
+            color: var(--accent);
+            font-size: 0.86rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0 0 14px;
+            font-size: clamp(2.2rem, 6vw, 4rem);
+            line-height: 1;
+        }
+
+        .lead {
+            margin: 0 0 22px;
+            max-width: 60ch;
+            line-height: 1.75;
+            color: var(--muted);
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 26px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 18px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .button.primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .button.secondary {
+            background: #fff7ed;
+            color: #9a3412;
+            border: 1px solid #fed7aa;
+        }
+
+        .feature-list {
+            display: grid;
+            gap: 14px;
+        }
+
+        .feature {
+            padding: 16px 18px;
+            border-radius: 18px;
+            background: #fffcf8;
+            border: 1px solid var(--border);
+        }
+
+        .feature strong {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 1.05rem;
+        }
+
+        .feature span {
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        .price-card {
+            display: grid;
+            gap: 18px;
+            align-content: start;
+            background: linear-gradient(180deg, #fff7ed 0%, #ffffff 100%);
+        }
+
+        .price {
+            padding: 18px;
+            border-radius: 22px;
+            background: #fff;
+            border: 1px solid var(--border);
+        }
+
+        .price strong {
+            display: block;
+            font-size: 2.6rem;
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+
+        .price span {
+            color: var(--muted);
+        }
+
+        .mini-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+        }
+
+        .mini {
+            padding: 14px;
+            border-radius: 16px;
+            background: #f8fafc;
+            border: 1px solid var(--border);
+        }
+
+        .mini p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+
+        .mini h3 {
+            margin: 6px 0 8px;
+            font-size: 1.05rem;
+        }
+
+        @media (max-width: 860px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page">
+        <section class="hero">
+            <article class="panel">
+                <p class="kicker">Day 10</p>
+                <h1>Product Page</h1>
+                <p class="lead">
+                    This is a simple CSS-only page for Day 10.
+                </p>
+
+                <div class="actions">
+                    <a class="button primary" href="#features">View Points</a>
+                    <a class="button secondary" href="index.html">Back to Index</a>
+                </div>
+
+                <div id="features" class="feature-list">
+                    <div class="feature">
+                        <strong>Simple layout</strong>
+                        <span>Uses grid and flexbox for easy spacing.</span>
+                    </div>
+                    <div class="feature">
+                        <strong>Only HTML and CSS</strong>
+                        <span>No JavaScript is used in this page.</span>
+                    </div>
+                    <div class="feature">
+                        <strong>Buttons</strong>
+                        <span>Two buttons are added for navigation.</span>
+                    </div>
+                </div>
+            </article>
+
+            <aside class="panel price-card">
+                <div class="price">
+                    <strong>Free</strong>
+                    <span>Good for classroom upload</span>
+                </div>
+
+                <div class="mini-grid">
+                    <div class="mini">
+                        <h3>Responsive</h3>
+                        <p>Works on mobile screens.</p>
+                    </div>
+                    <div class="mini">
+                        <h3>Reusable</h3>
+                        <p>Styles can be reused easily.</p>
+                    </div>
+                    <div class="mini">
+                        <h3>Simple</h3>
+                        <p>Easy to understand.</p>
+                    </div>
+                    <div class="mini">
+                        <h3>Clean</h3>
+                        <p>Basic structure and spacing.</p>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </main>
+</body>
+
+</html>

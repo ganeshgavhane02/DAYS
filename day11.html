@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11 - Travel Blog</title>
+    <style>
+        :root {
+            --bg: #f6faf8;
+            --panel: #ffffff;
+            --ink: #16302b;
+            --muted: #5f726d;
+            --accent: #0f766e;
+            --accent-soft: #d7f1ed;
+            --border: #dce7e4;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--ink);
+            background:
+                linear-gradient(180deg, rgba(15, 118, 110, 0.09), transparent 28%),
+                var(--bg);
+        }
+
+        .page {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 40px 20px 64px;
+        }
+
+        .masthead {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 30px;
+            padding: 28px;
+            box-shadow: 0 16px 34px rgba(15, 23, 42, 0.08);
+        }
+
+        .label {
+            display: inline-block;
+            margin-bottom: 14px;
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 0.84rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: clamp(2.2rem, 6vw, 4rem);
+            line-height: 1.02;
+        }
+
+        .intro {
+            max-width: 70ch;
+            margin: 0 0 24px;
+            color: var(--muted);
+            line-height: 1.75;
+        }
+
+        .hero-image {
+            min-height: 260px;
+            border-radius: 24px;
+            background:
+                linear-gradient(135deg, rgba(15, 118, 110, 0.18), rgba(22, 48, 43, 0.05)),
+                url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60') center/cover;
+            border: 1px solid var(--border);
+            margin-bottom: 22px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 18px;
+        }
+
+        .panel {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            padding: 22px;
+        }
+
+        .card-grid {
+            display: grid;
+            gap: 14px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .card {
+            padding: 16px;
+            border-radius: 18px;
+            background: #f8fbfa;
+            border: 1px solid var(--border);
+        }
+
+        .card h2 {
+            margin: 0 0 8px;
+            font-size: 1.1rem;
+        }
+
+        .card p,
+        .panel p,
+        li {
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .timeline {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        .timeline li+li {
+            margin-top: 10px;
+        }
+
+        .quote {
+            margin-top: 16px;
+            padding: 18px;
+            border-left: 4px solid var(--accent);
+            background: rgba(15, 118, 110, 0.08);
+            border-radius: 16px;
+            color: #0f4f48;
+        }
+
+        @media (max-width: 860px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page">
+        <article class="masthead">
+            <p class="label">Day 11</p>
+            <h1>Travel Blog</h1>
+            <p class="intro">
+                This is a simple travel page for Day 11 using HTML and CSS only.
+            </p>
+
+            <div class="hero-image" aria-label="Travel destination image"></div>
+
+            <section class="content">
+                <div class="panel">
+                    <h2>Journey highlights</h2>
+                    <div class="card-grid">
+                        <div class="card">
+                            <h2>Morning walk</h2>
+                            <p>Soft light, open paths, and a calm start to the day.</p>
+                        </div>
+                        <div class="card">
+                            <h2>Local food</h2>
+                            <p>Simple flavors and a page layout that keeps the story easy to follow.</p>
+                        </div>
+                        <div class="card">
+                            <h2>Beach view</h2>
+                            <p>Strong visual hierarchy with an image-led composition.</p>
+                        </div>
+                        <div class="card">
+                            <h2>Night market</h2>
+                            <p>Balanced spacing and section blocks for a polished practice submission.</p>
+                        </div>
+                    </div>
+
+                    <div class="quote">
+                        Day 11 page is ready for GitHub upload.
+                    </div>
+                </div>
+
+                <aside class="panel">
+                    <h2>Trip notes</h2>
+                    <ul class="timeline">
+                        <li>Arrive early and capture the best light.</li>
+                        <li>Keep the design easy to read.</li>
+                        <li>Use spacing between story blocks.</li>
+                        <li>Keep content inside HTML and CSS only.</li>
+                    </ul>
+                </aside>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>
