@@ -1,0 +1,32 @@
+.continer{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(235, 176, 146);
+    border-radius: 50%;
+    align-items: center;
+    
+
+}
+.mouth{
+    height: 75px;
+    width: 200px;
+    border-radius: 0 0 55px 55px;
+    background-color: rgb(202, 110, 110);
+    position: absolute;
+    left: 100px;
+    top: 250px;
+}
+.left , .right{
+    height: 80px;
+    width: 80px;
+    background-color: black;
+    border-radius: 50px;
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+
+}
+.right{
+    left: 220px;
+}
