@@ -1,20 +1,20 @@
-# DAYS
+# HTML and CSS Sidebar Mini Project
 
-This repository tracks my daily frontend practice. The goal is to improve core HTML and CSS skills through small, focused tasks with clean structure and clear documentation.
+A simple responsive gallery-style sidebar built with HTML and CSS. The page uses a full-screen image background, a navigation menu, Font Awesome icons, and a checkbox-based menu control.
 
+## Files
 
+- `pht.html` - The page structure and navigation menu.
+- `css.css` - The layout, background image, typography, colors, and sidebar styling.
+- `images.jpg` - The background image used by the page.
 
-### Learning outcomes
+## How to run
 
-- Better understanding of the CSS box model.
-- Practical use of Flexbox for alignment.
-- Building UI blocks with reusable class-based styles.
-- Basic accessibility improvements using `aria-label`.
+Open `pht.html` in a web browser. The page loads the stylesheet and image from the same folder.
 
-### Development note
+## Technologies
 
-This project was written and reviewed manually, with attention to readable code and documentation quality.
-
-## Next steps
-
-Additional folders (`day2`, `day3`, and beyond) will be added with progressively advanced practice tasks.
+- HTML5
+- CSS3
+- Font Awesome icons
+- Google Fonts
