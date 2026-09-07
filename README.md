@@ -4,13 +4,13 @@ A simple responsive gallery-style sidebar built with HTML and CSS. The page uses
 
 ## Files
 
-- `pht.html` - The page structure and navigation menu.
-- `css.css` - The layout, background image, typography, colors, and sidebar styling.
-- `images.jpg` - The background image used by the page.
+- `mini project/pht.html` - The page structure and navigation menu.
+- `mini project/css.css` - The layout, background image, typography, colors, and sidebar styling.
+- `mini project/images.jpg` - The background image used by the page.
 
 ## How to run
 
-Open `pht.html` in a web browser. The page loads the stylesheet and image from the same folder.
+Open `mini project/pht.html` in a web browser. The page loads the stylesheet and image from the same folder.
 
 ## Technologies
 
